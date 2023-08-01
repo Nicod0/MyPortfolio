@@ -1,0 +1,127 @@
+.container {
+  color: white;
+  background-color: rgba(65, 92, 109, 0.4);
+  height: 86vh;
+  border-radius: 1em;
+}
+.title {
+  text-align: center;
+  font-size: 4em;
+  letter-spacing: 0.05em;
+  padding: 1em;
+  margin-bottom: -2%;
+}
+.text {
+  text-align: left;
+  font-size: 1.5em;
+  line-height: 1.6;
+  margin-top: 1em;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+.text p {
+  margin-bottom: 1em;
+}
+.icons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5em;
+}
+.postgre svg {
+  fill: #336791;
+}
+.js svg {
+  fill: #f7df1e;
+}
+.react svg {
+  fill: #61dafb;
+}
+.ts svg {
+  fill: #007acc;
+}
+.redux svg {
+  fill: #764abc;
+}
+.sequelize svg {
+  fill: #1b4f72;
+}
+.tecnologias {
+  color: #62e0ff;
+}
+@media (min-width: 391px) and (max-width: 576px) {
+  .container {
+    flex-direction: row;
+    align-items: flex-start;
+    height: 80vh;
+  }
+  .title {
+    font-size: 3em;
+    margin-bottom: 0;
+    padding-bottom: 0.2em;
+  }
+  .text {
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 0.8em;
+    text-align: left;
+  }
+  .icons svg {
+    height: 2em;
+    width: 2em;
+  }
+}
+@media (min-width: 280px) and (max-width: 390px) {
+  .container {
+    flex-direction: row;
+    align-items: flex-start;
+    height: 115vh;
+  }
+  .title {
+    font-size: 3em;
+    margin-bottom: 0;
+    padding-bottom: 0.2em;
+  }
+  .text {
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 0.8em;
+    text-align: left;
+  }
+  .icons svg {
+    height: 2em;
+    width: 2em;
+  }
+}
+@media (min-width: 577px) and (max-width: 767px) {
+  .container {
+    flex-direction: row;
+    align-items: flex-start;
+    height: 280vh;
+  }
+
+  .text {
+    margin: 0 20px;
+    text-align: left;
+  }
+  .icons svg {
+    height: 2em;
+    width: 2em;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .container {
+    flex-direction: row;
+    align-items: flex-start;
+    height: 100vh;
+  }
+
+  .text {
+    margin: 0 20px;
+    text-align: left;
+  }
+  .icons svg {
+    height: 3em;
+    width: 3em;
+  }
+}

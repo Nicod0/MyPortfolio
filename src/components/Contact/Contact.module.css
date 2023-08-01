@@ -1,0 +1,256 @@
+.container {
+  color: white;
+  background-color: rgba(65, 92, 109, 0.4);
+  height: 87vh;
+  border-radius: 1em;
+}
+.sub_container {
+  display: flex;
+}
+.title {
+  text-align: center;
+  font-size: 4em;
+  letter-spacing: 0.05em;
+  padding: 1em;
+  margin-bottom: 0;
+}
+.section {
+  width: 50%;
+}
+.text {
+  font-size: 1.5em;
+  width: 90%;
+  margin-top: 0;
+}
+.sub_title {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.colorful_form {
+  width: 37em;
+  height: 29em;
+  padding: 20px;
+  background-color: #028cae;
+  border-radius: 5%;
+  margin-left: 5%;
+}
+
+.form_group {
+  margin-bottom: 20px;
+}
+
+.form_label {
+  font-size: 1.5em;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.form_input {
+  width: 95%;
+  padding: 10px;
+  border: none;
+  background-color: white;
+  color: #333;
+  border-radius: 5px;
+}
+
+textarea.form_input {
+  height: 100px;
+}
+.cont_button {
+  text-align: center;
+  align-items: center;
+}
+.button {
+  margin-left: 35%;
+  font-family: inherit;
+  font-size: 20px;
+  background: white;
+  color: #028cae;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.button span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+.button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.button:hover .svg_wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.button:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.button:hover span {
+  transform: translateX(5em);
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+.cont {
+  align-items: center;
+  text-align: center;
+}
+.button2 {
+  --color: #028cae;
+  font-family: inherit;
+  display: inline-block;
+  width: 10em;
+  height: 3em;
+  line-height: 2.5em;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 4px solid var(--color);
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  color: var(--color);
+  cursor: pointer;
+}
+
+.button2:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 230px; /* Aumentamos el tamaño del círculo */
+  width: 280px;
+  border-radius: 50%;
+}
+
+.button2:hover {
+  color: #fff;
+}
+
+.button2:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+
+.button2:hover:before {
+  top: -40px; /* Ajustamos la posición del círculo al hacer hover */
+  left: -50px;
+}
+
+.button2:active:before {
+  background: #028cae;
+  transition: background 0s;
+}
+@media (min-width: 390px) and (max-width: 576px) {
+  .container {
+    height: 150vh;
+  }
+
+  .sub_container {
+    flex-direction: column;
+  }
+  .section {
+    width: 100%;
+    margin-top: 2em;
+  }
+  .colorful_form {
+    margin-left: 0;
+    width: 86%;
+  }
+  .text {
+    font-size: 1em;
+  }
+}
+@media (min-width: 280px) and (max-width: 389px) {
+  .container {
+    height: 180vh;
+  }
+
+  .sub_container {
+    flex-direction: column;
+  }
+  .section {
+    width: 100%;
+    margin-top: 2em;
+  }
+  .colorful_form {
+    margin-left: 0;
+    width: 86%;
+  }
+  .text {
+    font-size: 1em;
+  }
+}
+@media (min-width: 577px) and (max-width: 767px) {
+  .container {
+    height: 210vh;
+  }
+  .sub_container {
+    flex-direction: column;
+  }
+  .section {
+    width: 100%;
+    margin-top: 2em;
+  }
+  .colorful_form {
+    margin-left: 0;
+    width: 88%;
+  }
+}
+
+/* Estilos para pantallas medianas */
+@media (max-width: 1024px) {
+  .title {
+    font-size: 3em;
+  }
+  .sub_title {
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .container {
+    height: 150vh;
+  }
+  .sub_container {
+    flex-direction: column;
+  }
+  .section {
+    width: 100%;
+    margin-top: 2em;
+  }
+  .colorful_form {
+    margin-left: 0;
+    width: 88%;
+  }
+}

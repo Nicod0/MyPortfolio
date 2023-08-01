@@ -1,0 +1,365 @@
+.container {
+  color: white;
+  background-color: rgba(65, 92, 109, 0.4);
+  height: 87vh;
+  border-radius: 1em;
+}
+.title {
+  text-align: center;
+  font-size: 4em;
+  letter-spacing: 0.05em;
+  padding: 1em;
+  margin-bottom: -2%;
+}
+.proyects {
+  display: flex;
+  flex-wrap: wrap;
+}
+.seccion {
+  width: 50%;
+  position: relative;
+}
+.proyect {
+  display: flex;
+}
+.name {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 2em;
+}
+.text {
+  font-size: 1.5em;
+}
+.descripcion {
+  width: 50%;
+  margin-left: 2em;
+}
+.carta {
+  width: 50%;
+}
+.tecnologias {
+  color: #62e0ff;
+}
+.myCard {
+  position: absolute;
+  background-color: transparent;
+  width: 20em;
+  height: 25em;
+  perspective: 1000px;
+  right: 0;
+  margin-right: 3em;
+}
+
+.innerCard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.myCard:hover .innerCard {
+  transform: rotateY(180deg);
+}
+
+.frontSide,
+.frontSidee,
+.backSide {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 1rem;
+  color: white;
+  box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
+  font-weight: 700;
+  cursor: default;
+}
+
+.frontSide,
+.frontSide::before {
+  background-image: url("../../code2.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.backSide,
+.backSide::before {
+  background-image: linear-gradient(160deg, #028cae 0%, #80d0c7 100%);
+}
+
+.backSide {
+  transform: rotateY(180deg);
+}
+
+.frontSide::before,
+.frontSidee::before,
+.backSide::before {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  width: 110%;
+  height: 110%;
+  position: absolute;
+  z-index: -1;
+  border-radius: 1em;
+  filter: blur(20px);
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0.3;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.3;
+  }
+}
+.links {
+  background-color: azure;
+  height: 5em;
+  width: 5em;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  background: white;
+  margin: 1.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+.links:hover {
+  background-color: #028cae;
+}
+.svgs {
+  height: 3em;
+  width: 3em;
+}
+.frontSidee,
+.frontSidee::before {
+  background-image: url("../../videogames.png");
+  background-size: cover;
+  background-position: center;
+}
+.web {
+  fill: black;
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (min-width: 390px) and (max-width: 576px) {
+  .container {
+    height: 170vh;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: center;
+  }
+  .title {
+    padding: 1em 0;
+    margin: 0;
+    font-size: 3em;
+  }
+  .name {
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+  .proyects {
+    text-align: center;
+  }
+
+  .seccion {
+    width: 100%;
+  }
+
+  .descripcion {
+    width: 600%;
+    padding-top: 60%;
+    text-align: center;
+  }
+  .text {
+    font-size: 1em;
+    margin-right: 0;
+    padding-right: 0;
+  }
+  .carta {
+    margin-top: 1.5em;
+    position: relative;
+    height: 10em;
+    width: 70em;
+    align-items: center;
+    text-align: center;
+  }
+
+  .myCard {
+    width: 230%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 389px) {
+  .container {
+    height: 170vh;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: center;
+  }
+  .title {
+    padding: 1em 0;
+    margin: 0;
+    font-size: 2.5em;
+  }
+  .name {
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+  .proyects {
+    text-align: center;
+  }
+
+  .seccion {
+    width: 100%;
+  }
+
+  .descripcion {
+    width: 730%;
+    padding-top: 65%;
+    text-align: center;
+  }
+  .text {
+    font-size: 0.8em;
+    margin-right: 0;
+    padding-right: 0;
+  }
+  .carta {
+    margin-top: 1.5em;
+    position: relative;
+    height: 10em;
+    width: 70em;
+    align-items: center;
+    text-align: center;
+  }
+
+  .myCard {
+    width: 230%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+  .container {
+    height: 380vh;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: center;
+  }
+  .title {
+    padding: 1em 0;
+    margin: 0;
+    font-size: 3.5em;
+  }
+  .proyects {
+    flex-direction: column; /* Muestra los elementos en una fila */
+  }
+
+  .seccion {
+    width: 100%;
+  }
+
+  .descripcion {
+    width: 100%;
+    padding-top: 30em;
+  }
+
+  .carta {
+    width: 100%;
+    margin-top: 1.5em;
+    position: relative;
+  }
+
+  .myCard {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+/* Media query para pantallas medianas (por ejemplo, tabletas) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .proyects {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .seccion {
+    width: 48%;
+  }
+
+  .descripcion {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .carta {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 1.5em;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .container {
+    height: 170vh;
+    align-items: flex-start;
+    text-align: center;
+  }
+  .title {
+    padding-top: 2em;
+    margin: 0;
+    font-size: 3em;
+    padding-bottom: 0;
+  }
+  .proyects {
+    text-align: center;
+  }
+
+  .seccion {
+    width: 100%;
+    margin-top: 5%;
+  }
+
+  .descripcion {
+    width: 100%;
+    padding-top: 0em;
+  }
+
+  .carta {
+    width: 100%;
+    margin-top: 1.5em;
+    position: relative;
+  }
+
+  .myCard {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

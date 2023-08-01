@@ -1,0 +1,23 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.portfolio {
+  min-height: 100vh;
+  background-image: url("./fon.jpg");
+  background-size: 100% 100%; /* Cambio a 100% 100% */
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  padding-top: 4em;
+}
+
+.sections {
+  margin: 2em;
+  flex-grow: 1;
+}
