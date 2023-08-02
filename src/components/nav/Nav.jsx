@@ -10,7 +10,11 @@ const Nav = () => {
   return (
     <div>
       <nav className={style.nav}>
-        <h1 onClick={() => scrollToSection("beggining")} className={style.logo}>
+        <h1
+          onClick={() => scrollToSection("beggining")}
+          className={style.logo}
+          translate="no"
+        >
           N
         </h1>
         <div className={style.links}>

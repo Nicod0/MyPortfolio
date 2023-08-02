@@ -70,7 +70,7 @@
   transition-property: width, left;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 768px) {
   .nav {
     align-items: flex-start;
     height: auto; /* La altura será ajustada automáticamente */
@@ -89,5 +89,47 @@
     margin-right: 0;
     margin-bottom: 10px; /* Agregamos un espacio entre los botones */
     font-size: 1.2em; /* Reducimos el tamaño de fuente para dispositivos más pequeños */
+  }
+}
+@media (min-width: 280px) and (max-width: 380px) {
+  .nav {
+    align-items: flex-start;
+    height: auto; /* La altura será ajustada automáticamente */
+  }
+
+  .logo {
+    margin-bottom: 7%;
+    margin-top: 5%;
+    font-size: 2.5em;
+  }
+
+  .links {
+    margin-top: 9%;
+  }
+
+  .links button {
+    margin-right: 0;
+    font-size: 1em;
+  }
+}
+@media (min-width: 381px) and (max-width: 576px) {
+  .nav {
+    align-items: flex-start;
+    height: auto; /* La altura será ajustada automáticamente */
+  }
+
+  .logo {
+    margin-bottom: 7%;
+    margin-top: 5%;
+    font-size: 2.5em;
+  }
+
+  .links {
+    margin-top: 9%;
+  }
+
+  .links button {
+    margin-right: 0;
+    font-size: 1em;
   }
 }
