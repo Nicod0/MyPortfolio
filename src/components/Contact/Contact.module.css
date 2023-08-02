@@ -352,3 +352,24 @@ textarea.form_input {
     width: 80%;
   }
 }
+@media (min-width: 1601px) and (max-width: 1900px) {
+  .container {
+    height: 100%;
+    padding-bottom: 5%;
+    margin-top: 5%;
+  }
+  .title {
+    font-size: 3em;
+  }
+  .text {
+    font-size: 1.3em;
+  }
+  .section {
+    width: 100%;
+    margin-top: 2em;
+  }
+  .colorful_form {
+    padding-left: 4%;
+    width: 80%;
+  }
+}

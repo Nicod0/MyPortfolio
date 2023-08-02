@@ -415,3 +415,47 @@
     margin-left: 4em;
   }
 }
+@media (min-width: 1601px) and (max-width: 1900px) {
+  .container {
+    height: 100%;
+    align-items: flex-start;
+    text-align: center;
+    padding-bottom: 3%;
+    margin-top: 5%;
+  }
+  .title {
+    padding-top: 5%;
+    margin: 0;
+    font-size: 4em;
+    padding-bottom: 0;
+  }
+  .text {
+    font-size: 1.3em;
+  }
+  .proyects {
+    display: flex;
+  }
+
+  .seccion {
+    width: 50%;
+    margin-top: 2%;
+  }
+
+  .descripcion {
+    width: 150%;
+    padding-top: 0em;
+  }
+
+  .carta {
+    width: 100%;
+    margin-top: 1.5em;
+    position: relative;
+    margin-left: 17%;
+    padding-left: 7%;
+  }
+  .myCard {
+    height: 20rem;
+    width: 15rem;
+    margin-left: 4em;
+  }
+}
