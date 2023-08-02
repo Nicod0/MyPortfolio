@@ -172,44 +172,120 @@ textarea.form_input {
   background: #028cae;
   transition: background 0s;
 }
-@media (min-width: 390px) and (max-width: 576px) {
+@media (min-width: 391px) and (max-width: 576px) {
   .container {
-    height: 150vh;
+    height: 100%;
+    padding-bottom: 5%;
+    margin-top: 25%;
+  }
+  .title {
+    font-size: 2em;
+    padding-bottom: 0;
+  }
+  .sub_title {
+    font-size: 1em;
+    padding-bottom: 0.5em;
+  }
+  .form_group {
+    margin-bottom: 0.2em;
+  }
+  .form_label {
+    font-size: 1em;
+  }
+  .form_input {
+    padding: 0.5em;
+    height: 1em;
   }
 
   .sub_container {
     flex-direction: column;
+    text-align: center;
+    align-items: center;
   }
   .section {
     width: 100%;
     margin-top: 2em;
   }
   .colorful_form {
-    margin-left: 0;
-    width: 86%;
+    width: 76%;
+    height: 15em;
+  }
+  .button {
+    height: 1.8em;
+    width: 5.5em;
+    margin: auto;
+  }
+  .button span {
+    font-size: 0.7em;
+  }
+  .button2 {
+    height: 3em;
+    width: 7em;
+    justify-content: center;
+    line-height: 0;
+    font-size: 1em;
   }
   .text {
-    font-size: 1em;
+    font-size: 0.8em;
+    margin: auto;
   }
 }
-@media (min-width: 280px) and (max-width: 389px) {
+@media (min-width: 280px) and (max-width: 390px) {
   .container {
-    height: 180vh;
+    height: 100%;
+    padding-bottom: 5%;
+    margin-top: 10%;
+  }
+  .title {
+    font-size: 2em;
+    padding-bottom: 0;
+  }
+  .sub_title {
+    font-size: 1em;
+    padding-bottom: 0.5em;
+  }
+  .form_group {
+    margin-bottom: 0.2em;
+  }
+  .form_label {
+    font-size: 1em;
+  }
+  .form_input {
+    padding: 0.5em;
+    height: 1em;
   }
 
   .sub_container {
     flex-direction: column;
+    text-align: center;
+    align-items: center;
   }
   .section {
     width: 100%;
     margin-top: 2em;
   }
   .colorful_form {
-    margin-left: 0;
-    width: 86%;
+    width: 76%;
+    height: 15em;
+  }
+  .button {
+    height: 1.8em;
+    width: 5.5em;
+    margin: auto;
+  }
+  .button span {
+    font-size: 0.7em;
+  }
+  .button2 {
+    height: 3em;
+    width: 7em;
+    justify-content: center;
+    line-height: 0;
+    font-size: 1em;
   }
   .text {
-    font-size: 1em;
+    font-size: 0.8em;
+    margin: auto;
   }
 }
 @media (min-width: 577px) and (max-width: 767px) {
@@ -230,27 +306,45 @@ textarea.form_input {
 }
 
 /* Estilos para pantallas medianas */
-@media (max-width: 1024px) {
+@media (min-width: 800px) and (max-width: 1199px) {
+  .container {
+    height: 100%;
+    padding-bottom: 5%;
+    margin-top: 10%;
+  }
   .title {
     font-size: 3em;
   }
-  .sub_title {
-    font-size: 1.5em;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1600px) {
-  .container {
-    height: 150vh;
-  }
-  .sub_container {
-    flex-direction: column;
+  .text {
+    font-size: 1.3em;
   }
   .section {
     width: 100%;
     margin-top: 2em;
   }
   .colorful_form {
-    margin-left: 0;
-    width: 88%;
+    padding-left: 4%;
+    width: 80%;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .container {
+    height: 100%;
+    padding-bottom: 5%;
+    margin-top: 5%;
+  }
+  .title {
+    font-size: 3em;
+  }
+  .text {
+    font-size: 1.3em;
+  }
+  .section {
+    width: 100%;
+    margin-top: 2em;
+  }
+  .colorful_form {
+    padding-left: 4%;
+    width: 80%;
   }
 }

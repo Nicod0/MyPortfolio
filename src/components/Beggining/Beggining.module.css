@@ -90,7 +90,7 @@
 }
 @media (max-width: 768px) {
   .container {
-    flex-direction: column; /* Cambiamos la dirección de la flexbox a vertical */
+    flex-direction: column;
   }
 }
 
@@ -152,11 +152,11 @@
 .github {
   fill: #333;
 }
-/* Resto de estilos */
-@media (min-width: 380px) and (max-width: 576px) {
+
+@media (min-width: 381px) and (max-width: 576px) {
   .container {
     flex-direction: column;
-    height: 90vh;
+    height: 100%;
   }
 
   .presentacion {
@@ -168,6 +168,7 @@
 
   .title {
     font-size: 3em;
+    margin-top: 0;
   }
 
   .subTitle {
@@ -208,7 +209,7 @@
 @media (min-width: 280px) and (max-width: 380px) {
   .container {
     flex-direction: column;
-    height: 110vh;
+    height: 100%;
   }
 
   .presentacion {
@@ -260,7 +261,7 @@
 @media (min-width: 577px) and (max-width: 767px) {
   .container {
     flex-direction: column;
-    height: 190vh;
+    height: 100%;
   }
 
   .presentacion {
@@ -301,5 +302,31 @@
     /* Adjust the padding */
     margin-top: 0; /* Remove the margin-top to align with other sections */
     padding-top: 0;
+  }
+}
+@media (min-width: 800px) and (max-width: 1199px) {
+  .title {
+    font-size: 5em;
+    margin-left: 4%;
+  }
+  .subTitle {
+    font-size: 3em;
+    margin-left: 8%;
+  }
+  .social_links {
+    margin-left: 5%;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .title {
+    font-size: 5em;
+    margin-left: 4%;
+  }
+  .subTitle {
+    font-size: 3em;
+    margin-left: 8%;
+  }
+  .social_links {
+    margin-left: 5%;
   }
 }

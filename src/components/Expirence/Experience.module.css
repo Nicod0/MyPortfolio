@@ -3,6 +3,7 @@
   background-color: rgba(65, 92, 109, 0.4);
   height: 87vh;
   border-radius: 1em;
+  margin-top: 5%;
 }
 .title {
   text-align: center;
@@ -163,87 +164,42 @@
   justify-content: space-around;
 }
 
-@media (min-width: 390px) and (max-width: 576px) {
+@media (min-width: 391px) and (max-width: 576px) {
   .container {
-    height: 170vh;
-    flex-direction: row;
-    align-items: flex-start;
-    text-align: center;
-  }
-  .title {
-    padding: 1em 0;
-    margin: 0;
-    font-size: 3em;
-  }
-  .name {
-    margin-top: 0;
-    padding-top: 0;
-    font-size: 2em;
-    margin-bottom: 1em;
-  }
-  .proyects {
-    text-align: center;
-  }
-
-  .seccion {
-    width: 100%;
-  }
-
-  .descripcion {
-    width: 600%;
-    padding-top: 60%;
-    text-align: center;
-  }
-  .text {
-    font-size: 1em;
-    margin-right: 0;
-    padding-right: 0;
-  }
-  .carta {
-    margin-top: 1.5em;
-    position: relative;
-    height: 10em;
-    width: 70em;
-    align-items: center;
-    text-align: center;
-  }
-
-  .myCard {
-    width: 230%;
     height: 100%;
-  }
-}
-
-@media (min-width: 280px) and (max-width: 389px) {
-  .container {
-    height: 170vh;
-    flex-direction: row;
     align-items: flex-start;
     text-align: center;
+    padding-bottom: 6%;
+    margin-top: 25%;
   }
   .title {
     padding: 1em 0;
     margin: 0;
-    font-size: 2.5em;
+    font-size: 2em;
   }
   .name {
     margin-top: 0;
     padding-top: 0;
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin-bottom: 1em;
   }
-  .proyects {
-    text-align: center;
+  .proyect {
+    flex-direction: column;
+    width: 100%;
+    flex-direction: column-reverse;
   }
-
+  .proyects {
+    flex-direction: column;
+  }
   .seccion {
     width: 100%;
   }
 
   .descripcion {
-    width: 730%;
-    padding-top: 65%;
-    text-align: center;
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 5%;
   }
   .text {
     font-size: 0.8em;
@@ -251,17 +207,84 @@
     padding-right: 0;
   }
   .carta {
-    margin-top: 1.5em;
-    position: relative;
-    height: 10em;
-    width: 70em;
-    align-items: center;
-    text-align: center;
+    width: 100%;
   }
 
   .myCard {
-    width: 230%;
+    position: relative;
+    height: 10em;
+    width: 55%;
+    margin-left: 5em;
+  }
+  .links {
+    width: 3em;
+    height: 3em;
+  }
+  .svgs {
+    width: 2em;
+    height: 2em;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 390px) {
+  .container {
     height: 100%;
+    align-items: flex-start;
+    text-align: center;
+    padding-bottom: 6%;
+    margin-top: 30%;
+  }
+  .title {
+    padding: 1em 0;
+    margin: 0;
+    font-size: 2em;
+  }
+  .name {
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 1.3em;
+    margin-bottom: 1em;
+  }
+  .proyect {
+    flex-direction: column;
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .proyects {
+    flex-direction: column;
+  }
+  .seccion {
+    width: 100%;
+  }
+
+  .descripcion {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 5%;
+  }
+  .text {
+    font-size: 0.8em;
+    margin-right: 0;
+    padding-right: 0;
+  }
+  .carta {
+    width: 100%;
+  }
+
+  .myCard {
+    position: relative;
+    height: 10em;
+    width: 55%;
+    margin-left: 5em;
+  }
+  .links {
+    width: 3em;
+    height: 3em;
+  }
+  .svgs {
+    width: 2em;
+    height: 2em;
   }
 }
 
@@ -303,47 +326,29 @@
 }
 
 /* Media query para pantallas medianas (por ejemplo, tabletas) */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .proyects {
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .seccion {
-    width: 48%;
-  }
-
-  .descripcion {
-    width: 100%;
-    margin-left: 0;
-  }
-
-  .carta {
-    width: 100%;
-    margin-right: 0;
-    margin-top: 1.5em;
-  }
-}
-
-@media (min-width: 1200px) and (max-width: 1600px) {
+@media (min-width: 800px) and (max-width: 1199px) {
   .container {
-    height: 170vh;
+    height: 100%;
     align-items: flex-start;
     text-align: center;
+    padding-bottom: 4%;
+    margin-top: 10%;
   }
   .title {
-    padding-top: 2em;
+    padding-top: 5%;
     margin: 0;
     font-size: 3em;
     padding-bottom: 0;
   }
+  .text {
+    font-size: 0.8em;
+  }
   .proyects {
-    text-align: center;
+    display: flex;
   }
 
   .seccion {
-    width: 100%;
+    width: 50%;
     margin-top: 5%;
   }
 
@@ -356,10 +361,57 @@
     width: 100%;
     margin-top: 1.5em;
     position: relative;
+    margin-left: 17%;
+    padding-left: 7%;
+  }
+  .myCard {
+    height: 13rem;
+    width: 10rem;
+    margin-left: 4em;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .container {
+    height: 100%;
+    align-items: flex-start;
+    text-align: center;
+    padding-bottom: 4%;
+    margin-top: 6%;
+  }
+  .title {
+    padding-top: 5%;
+    margin: 0;
+    font-size: 3em;
+    padding-bottom: 0;
+  }
+  .text {
+    font-size: 1.1em;
+  }
+  .proyects {
+    display: flex;
   }
 
+  .seccion {
+    width: 50%;
+    margin-top: 5%;
+  }
+
+  .descripcion {
+    width: 100%;
+    padding-top: 0em;
+  }
+
+  .carta {
+    width: 100%;
+    margin-top: 1.5em;
+    position: relative;
+    margin-left: 17%;
+    padding-left: 7%;
+  }
   .myCard {
-    margin-right: auto;
-    margin-left: auto;
+    height: 20rem;
+    width: 15rem;
+    margin-left: 4em;
   }
 }

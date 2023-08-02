@@ -86,8 +86,7 @@ const Experience = () => {
                 <br />
                 <span className={style.tecnologias}>Back:</span> Express y
                 Sequelize. <br />
-                <span className={style.tecnologias}>Base de datos:</span>{" "}
-                PostgreSQL.
+                <span className={style.tecnologias}>Database:</span> PostgreSQL.
               </p>
             </div>
             <div className={style.carta}>

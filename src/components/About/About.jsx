@@ -29,7 +29,7 @@ const About = () => {
         <p>
           If you're looking for someone passionate about programming with strong
           technical skills, I would love to get in touch and explore potential
-          job opportunities in this exciting field!
+          job opportunities in this exciting field!.
         </p>
       </div>
       <div className={style.icons}>
