@@ -196,7 +196,9 @@ textarea.form_input {
     padding: 0.5em;
     height: 1em;
   }
-
+  textarea.form_input {
+    height: 1.2em !important; /* Cambia este valor al tamaño deseado */
+  }
   .sub_container {
     flex-direction: column;
     text-align: center;
@@ -254,7 +256,9 @@ textarea.form_input {
     padding: 0.5em;
     height: 1em;
   }
-
+  textarea.form_input {
+    height: 1.2em !important; /* Cambia este valor al tamaño deseado */
+  }
   .sub_container {
     flex-direction: column;
     text-align: center;

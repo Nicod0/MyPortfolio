@@ -72,7 +72,7 @@ const Contact = () => {
               <textarea
                 required=""
                 placeholder="Write a message"
-                className={style.form_input}
+                className={`${style.form_input} ${style.textarea}`}
                 name="message"
                 id="message"
               ></textarea>
