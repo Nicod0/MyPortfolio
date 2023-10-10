@@ -15,13 +15,16 @@
 .proyects {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 .seccion {
-  width: 50%;
+  text-align: center;
+  width: 100%;
   position: relative;
 }
 .proyect {
   display: flex;
+  width: 100%;
 }
 .name {
   font-size: 2em;
@@ -41,14 +44,19 @@
 .tecnologias {
   color: #62e0ff;
 }
+.paginado {
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 13%;
+}
 .myCard {
   position: absolute;
   background-color: transparent;
-  width: 20em;
+  width: 40em;
   height: 25em;
   perspective: 1000px;
-  right: 0;
-  margin-right: 3em;
+  right: 7%;
 }
 
 .innerCard {
@@ -115,6 +123,58 @@
   border-radius: 1em;
   filter: blur(20px);
   animation: animate 5s linear infinite;
+}
+.button {
+  --color: #028cae;
+  font-family: inherit;
+  display: inline-block;
+  width: 10em;
+  height: 3em;
+  line-height: 2.5em;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 4px solid var(--color);
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  color: var(--color);
+  cursor: pointer;
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 230px; /* Aumentamos el tamaño del círculo */
+  width: 280px;
+  border-radius: 50%;
+}
+
+.button:hover {
+  color: #fff;
+}
+
+.button:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+
+.button:hover:before {
+  top: -40px; /* Ajustamos la posición del círculo al hacer hover */
+  left: -50px;
+}
+
+.button:active:before {
+  background: #028cae;
+  transition: background 0s;
+}
+.button:disabled {
+  cursor: not-allowed;
 }
 
 @keyframes animate {
@@ -332,42 +392,80 @@
     align-items: flex-start;
     text-align: center;
     padding-bottom: 4%;
-    margin-top: 10%;
+    margin-top: 6%;
   }
   .title {
-    padding-top: 5%;
+    padding-top: 3%;
     margin: 0;
-    font-size: 3em;
+    font-size: 2.1em;
     padding-bottom: 0;
   }
-  .text {
-    font-size: 0.8em;
-  }
+
   .proyects {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
-
   .seccion {
-    width: 50%;
-    margin-top: 5%;
-  }
-
-  .descripcion {
+    text-align: center;
     width: 100%;
-    padding-top: 0em;
-  }
-
-  .carta {
-    width: 100%;
-    margin-top: 1.5em;
     position: relative;
-    margin-left: 17%;
-    padding-left: 7%;
+  }
+  .proyect {
+    display: flex;
+    width: 100%;
+  }
+  .name {
+    font-size: 1.4em;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  .text {
+    font-size: 1em;
+  }
+  .descripcion {
+    width: 50%;
+    margin-left: 2em;
+    margin-top: -2%;
+  }
+  .carta {
+    width: 50%;
+  }
+  .tecnologias {
+    color: #62e0ff;
+  }
+  .paginado {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 8%;
   }
   .myCard {
-    height: 13rem;
-    width: 10rem;
-    margin-left: 4em;
+    position: absolute;
+    background-color: transparent;
+    width: 21em;
+    height: 14em;
+    perspective: 1000px;
+    right: 5%;
+  }
+  .button {
+    --color: #028cae;
+    font-family: inherit;
+    display: inline-block;
+    width: 10em;
+    height: 3em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 4px solid var(--color);
+    transition: color 0.5s;
+    z-index: 1;
+    font-size: 15px;
+    border-radius: 8px;
+    font-weight: 500;
+    color: var(--color);
+    cursor: pointer;
   }
 }
 
@@ -380,9 +478,9 @@
     margin-top: 6%;
   }
   .title {
-    padding-top: 5%;
+    padding-top: 3%;
     margin: 0;
-    font-size: 3em;
+    font-size: 2.2em;
     padding-bottom: 0;
   }
   .text {
@@ -390,29 +488,69 @@
   }
   .proyects {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
-
   .seccion {
-    width: 50%;
-    margin-top: 5%;
-  }
-
-  .descripcion {
+    text-align: center;
     width: 100%;
-    padding-top: 0em;
-  }
-
-  .carta {
-    width: 100%;
-    margin-top: 1.5em;
     position: relative;
-    margin-left: 17%;
-    padding-left: 7%;
+  }
+  .proyect {
+    display: flex;
+    width: 100%;
+  }
+  .name {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  .text {
+    font-size: 1.1em;
+  }
+  .descripcion {
+    width: 50%;
+    margin-left: 2em;
+    margin-top: -2%;
+  }
+  .carta {
+    width: 50%;
+  }
+  .tecnologias {
+    color: #62e0ff;
+  }
+  .paginado {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 11%;
   }
   .myCard {
-    height: 20rem;
-    width: 15rem;
-    margin-left: 4em;
+    position: absolute;
+    background-color: transparent;
+    width: 25em;
+    height: 15em;
+    perspective: 1000px;
+    right: 5%;
+  }
+  .button {
+    --color: #028cae;
+    font-family: inherit;
+    display: inline-block;
+    width: 10em;
+    height: 3em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 4px solid var(--color);
+    transition: color 0.5s;
+    z-index: 1;
+    font-size: 15px;
+    border-radius: 8px;
+    font-weight: 500;
+    color: var(--color);
+    cursor: pointer;
   }
 }
 @media (min-width: 1601px) and (max-width: 1900px) {

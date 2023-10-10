@@ -122,19 +122,28 @@
     height: 100%;
     margin-bottom: 3%;
     padding-bottom: 3%;
-    margin-top: 10%;
+    margin-top: 7%;
   }
+
   .title {
-    font-size: 3em;
+    text-align: center;
+    font-size: 2.1em;
+    letter-spacing: 0.05em;
+    padding: 1em;
+    margin-bottom: -2%;
   }
   .text {
-    margin: 0 20px;
     text-align: left;
-    font-size: 1.4em;
+    font-size: 1em;
+    line-height: 1.6;
+    margin-top: 1em;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: -2%;
   }
   .icons svg {
-    height: 3em;
-    width: 3em;
+    height: 2.5em;
+    width: 2.5em;
   }
 }
 @media (min-width: 1200px) and (max-width: 1600px) {
@@ -147,12 +156,24 @@
     margin-top: 7%;
   }
 
+  .title {
+    text-align: center;
+    font-size: 2.2em;
+    letter-spacing: 0.05em;
+    padding: 1em;
+    margin-bottom: -2%;
+  }
   .text {
-    margin: 0 20px;
     text-align: left;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-top: 1em;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: -2%;
   }
   .icons svg {
-    height: 3em;
-    width: 3em;
+    height: 2.5em;
+    width: 2.5em;
   }
 }

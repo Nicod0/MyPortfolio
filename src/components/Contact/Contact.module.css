@@ -314,21 +314,62 @@ textarea.form_input {
   .container {
     height: 100%;
     padding-bottom: 5%;
-    margin-top: 10%;
+    margin-top: 5%;
   }
   .title {
-    font-size: 3em;
+    font-size: 2.1em;
   }
   .text {
-    font-size: 1.3em;
+    font-size: 1em;
+  }
+
+  .sub_title {
+    font-size: 1.4em;
+    padding-bottom: 0.5em;
+  }
+  .form_group {
+    margin-bottom: 0.2em;
+  }
+  .form_label {
+    font-size: 1.2em;
+  }
+  .form_input {
+    padding: 0.5em;
+    height: 1.3em;
+  }
+  textarea.form_input {
+    height: 4em !important;
+  }
+  .sub_container {
+    text-align: center;
+    align-items: center;
+    margin-top: -2%;
   }
   .section {
     width: 100%;
     margin-top: 2em;
   }
   .colorful_form {
-    padding-left: 4%;
-    width: 80%;
+    width: 76%;
+    height: 20em;
+  }
+  .cont_button {
+    padding-top: 0.6em;
+  }
+  .button {
+    height: 1.8em;
+    width: 5.5em;
+    margin: auto;
+  }
+  .button span {
+    font-size: 0.7em;
+  }
+  .button2 {
+    height: 3em;
+    width: 7em;
+    justify-content: center;
+    line-height: 0;
+    font-size: 0.9em;
   }
 }
 @media (min-width: 1200px) and (max-width: 1600px) {
@@ -338,18 +379,59 @@ textarea.form_input {
     margin-top: 5%;
   }
   .title {
-    font-size: 3em;
+    font-size: 2.2em;
   }
   .text {
-    font-size: 1.3em;
+    font-size: 1.1em;
+  }
+
+  .sub_title {
+    font-size: 1.4em;
+    padding-bottom: 0.5em;
+  }
+  .form_group {
+    margin-bottom: 0.2em;
+  }
+  .form_label {
+    font-size: 1.2em;
+  }
+  .form_input {
+    padding: 0.5em;
+    height: 1.3em;
+  }
+  textarea.form_input {
+    height: 4em !important;
+  }
+  .sub_container {
+    text-align: center;
+    align-items: center;
+    margin-top: -2%;
   }
   .section {
     width: 100%;
     margin-top: 2em;
   }
   .colorful_form {
-    padding-left: 4%;
-    width: 80%;
+    width: 76%;
+    height: 20em;
+  }
+  .cont_button {
+    padding-top: 0.6em;
+  }
+  .button {
+    height: 1.8em;
+    width: 5.5em;
+    margin: auto;
+  }
+  .button span {
+    font-size: 0.7em;
+  }
+  .button2 {
+    height: 3em;
+    width: 7em;
+    justify-content: center;
+    line-height: 0;
+    font-size: 1em;
   }
 }
 @media (min-width: 1601px) and (max-width: 1900px) {
